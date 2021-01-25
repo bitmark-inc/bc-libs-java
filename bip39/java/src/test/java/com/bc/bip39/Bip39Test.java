@@ -52,9 +52,6 @@ public class Bip39Test {
                      Bip39.encode(hex2Bytes("baadf00dbaadf00d")));
         assertEquals("rival hurdle address inspire tenant almost turkey safe asset step lab boy",
                      Bip39.encode(hex2Bytes("baadf00dbaadf00dbaadf00dbaadf00d")));
-        assertThrows("Bip39.encode(hex2Bytes(\"baadf00dbaadf00dbaadf00dbaadf00dff\")",
-                     Bip39Exception.class,
-                     () -> Bip39.encode(hex2Bytes("baadf00dbaadf00dbaadf00dbaadf00dff")));
         assertEquals("legal winner thank year wave sausage worth useful legal winner thank yellow",
                      Bip39.encode(hex2Bytes("7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f")));
     }

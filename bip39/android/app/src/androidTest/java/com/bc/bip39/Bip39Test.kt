@@ -55,10 +55,6 @@ class Bip39Test {
             Bip39.encode("baadf00dbaadf00dbaadf00dbaadf00d".hex2Bytes())
         )
 
-        assertThrows<Bip39Exception>(
-            "Bip39.encode(\"baadf00dbaadf00dbaadf00dbaadf00dff\".hex2Bytes())"
-        ) { Bip39.encode("baadf00dbaadf00dbaadf00dbaadf00dff".hex2Bytes()) }
-
         assertEquals(
             "legal winner thank year wave sausage worth useful legal winner thank yellow",
             Bip39.encode("7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f".hex2Bytes())
